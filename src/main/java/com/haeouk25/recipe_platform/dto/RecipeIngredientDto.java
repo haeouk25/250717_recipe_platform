@@ -1,6 +1,5 @@
 package com.haeouk25.recipe_platform.dto;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,8 +9,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RecipeDto {
-    @NotBlank
-    private String title;
-    private String description;
+public class RecipeIngredientDto {
+    private Long ingredientId;
+    private String ingredientName;
+    private String quantity;
 }
